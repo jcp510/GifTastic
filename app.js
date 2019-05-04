@@ -38,7 +38,7 @@ $(document).ready(function() {
       for (var i = 0; i < results.length; i++) {
 
         // Create div for gif.
-        var gifDiv = $("<div>");
+        var gifDiv = $("<div class=\"aGif\">");
 
         // Store result item rating.
         var rating = results[i].rating;
@@ -50,7 +50,7 @@ $(document).ready(function() {
         var imageUrl = results[i].images.fixed_height.url;
 
         // Create and store img tag.
-        var topicImage = $("<img>");
+        var topicImage = $("<img class=\"img-fluid rounded\">");
 
         // Set topicImage src attribute to imageUrl.
         topicImage.attr("src", imageUrl);
