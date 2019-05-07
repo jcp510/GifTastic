@@ -6,3 +6,12 @@
   float: left;
   margin-right: 20px;
 }
+
+#addNewGif {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+label {
+  padding-top: 12px;
+}

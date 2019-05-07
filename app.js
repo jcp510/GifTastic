@@ -10,9 +10,9 @@ $(document).ready(function() {
     $("#buttonsDiv").append(topicButton);
   };
 
-  /* When the user clicks on a button, the page should grab 10 static,
+  /* When the user clicks on a gif button, the page should grab 10 static,
   non-animated gif images from the GIPHY API and place them on the page. */
-  $(".btn").on("click", function () {
+  $(".btn-info").on("click", function () {
 
     // Clear out gifs from previously clicked button.
     $("#gifsDiv").empty();
@@ -88,8 +88,16 @@ $(document).ready(function() {
     });
   });
   
-  /* Add a form to your page takes the value from a user input box and adds it into
-   your topics array. Then make a function call that takes each topic in the array
+  /* When user clicks "Submit" button, the value from user input box is added into topics array. Then a function call that takes each topic in the array
    remakes the buttons on the page. */
+  $(".btn-primary").on("click", function() {
+    // Grab user input for new gif and add it to "topics" array.
+    var newGif = $("#addNewGif").val();
+    topics.append(newGif);
+
+    // Call function to remake page to include newly added gif.
+    
+
+  });
 });
 
